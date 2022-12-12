@@ -24,6 +24,7 @@
         {{- end }}
       </div>
       {{- end }}
+      {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
     </header>
     <div class="post-content">
       {{ .Content }}
